@@ -1,0 +1,20 @@
+﻿<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/froala_editor.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/froala_editor.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/froala_style.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+  $(function() {
+    var sett={
+        toolbarButtons: ['fullscreen', 'bold', 'italic', 'underline', 'strikeThrough', 'subscript', 'superscript', '|', 'fontFamily', 'fontSize', 'color','align', 'formatOL', 'formatUL', 'quote', 'insertLink', 'insertImage', 'insertVideo', 'insertFile', 'insertTable', '|', 'selectAll', 'clearFormatting', 'html', 'undo', 'redo'],
+        pastePlain: true,
+        direction: 'rtl',
+        language: 'fa',
+        height: 150
+    };
+    $('#froala-editor0').froalaEditor(sett)
+    $('#froala-editor1').froalaEditor(sett)
+  });
+</script>
+
+<textarea name="data[question][title]" id="froala-editor0" class="form-control" dir="rtl" cols="30" rows="6" required="required"></textarea>
